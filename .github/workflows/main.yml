@@ -23,7 +23,7 @@ jobs:
       - id: "gcloud"
         name: "gcloud"
         run: |-
-          gcloud config set project projects/369023494581/locations/global/workloadIdentityPools/iam-lab-7-gh-pool/providers/iam-lab-7-gh-pool-oidc-provider
+          gcloud config set project gcp-labs-1q4hkisj
           gcloud config set account 'iam-lab-7-target@gcp-labs-1q4hkisj.iam.gserviceaccount.com'
           gcloud auth login --brief --cred-file="${{ steps.auth.outputs.credentials_file_path }}"
           gcloud auth list
